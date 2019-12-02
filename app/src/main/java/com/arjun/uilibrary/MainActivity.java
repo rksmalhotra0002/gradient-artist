@@ -18,7 +18,6 @@ import com.google.android.material.snackbar.Snackbar;
 public class MainActivity extends AppCompatActivity {
 
     GradientArtistBasic gradient;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,29 +36,9 @@ public class MainActivity extends AppCompatActivity {
 
         gradient=(GradientArtistBasic) findViewById(R.id.gradientImage);
         gradient.setUrlImage("https://img1.etsystatic.com/002/0/6449624/il_fullxfull.382134677_so6e.jpg",R.drawable.weather,
-                R.drawable.weather, ImageView.ScaleType.CENTER_CROP);
-        gradient.setDrawableImage(R.drawable.weather,R.drawable.weather,R.drawable.weather,
-               ImageView.ScaleType.CENTER_CROP);
+                R.drawable.shubham, ImageView.ScaleType.CENTER_CROP);
+    /*    gradient.setDrawableImage(R.drawable.shubham,R.drawable.weather,R.drawable.weather,
+               ImageView.ScaleType.CENTER_CROP);*/
     }
 
-/*    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
-        return true;
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-        return super.onOptionsItemSelected(item);
-    }*/
 }
